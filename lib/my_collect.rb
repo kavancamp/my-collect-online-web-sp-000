@@ -5,7 +5,8 @@ def my_collect(array)
     while i < array.length
       collection << my_collect(array[i]) do |array|
         array.split(" ").first
-   i += 1
+        i += 1
+    end
   end
   collection
 end
